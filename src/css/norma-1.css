@@ -1,10 +1,22 @@
 body {
-  background: linear-gradient(to left, lime 8px, red 77%, cyan);
+  background: linear-gradient(to left, lime 8px, red 57%, cyan);
 }
 .time {
+  display: flex;
   border: 0.5px solid rgb(60, 137, 160);
   border-radius: 15px;
   padding: 5px 5px;
   box-shadow: 5px 5px 5px red;
   display: inline-block;
+  margin-bottom: 10px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid rgb(60, 137, 160);
+  border-radius: 15px;
+  padding: 5px 5px;
+  box-shadow: 5px 5px 5px red;
+  display: inline-block; 
 }

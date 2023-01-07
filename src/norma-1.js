@@ -11,7 +11,7 @@ const time = {
     return d < 10 ? "0" + d : d;
   },
 
-  timeOutput(t = new Date()) {
+  timeOutput(t) {
     //let now = new Date();
     let h = this.addLeadingZero(t.getHours());
     let m = this.addLeadingZero(t.getMinutes());
@@ -21,11 +21,10 @@ const time = {
         this.minutes
       )}:${this.addLeadingZero(this.seconds)}`
     );
-    console.log(`${h}:${m}:${s}`);
-    console.log(`Now is: ${t.getHours()}:${t.getMinutes()}:${t.getSeconds()}`);
+    console.log(`Now is__ ${h}:${m}:${s}`);
     document.querySelector(
       ".time"
-    ).innerHTML = `${t.getHours()}:${t.getMinutes()}:${t.getSeconds()}`;
+    ).innerHTML = `${this.addLeadingZero(t.getHours())}:${this.addLeadingZero(t.getMinutes())}:${this.addLeadingZero(t.getSeconds())}`;
   },
 };
 
