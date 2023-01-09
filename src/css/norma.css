@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(to left, lime 8px, red 57%, cyan);
+  color: rgb(75, 28, 118);
+  font-size: 16px;
 }
 .time {
   display: flex;
@@ -18,5 +20,27 @@ body {
   border-radius: 15px;
   padding: 5px 5px;
   box-shadow: 5px 5px 5px red;
-  display: inline-block; 
+  display: inline-block;
+}
+
+.befor {
+  margin: 0;
+}
+
+.seconds {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.minutes {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.hours {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }

@@ -22,9 +22,11 @@ const time = {
       )}:${this.addLeadingZero(this.seconds)}`
     );
     console.log(`Now is__ ${h}:${m}:${s}`);
-    document.querySelector(
-      ".time"
-    ).innerHTML = `${this.addLeadingZero(t.getHours())}:${this.addLeadingZero(t.getMinutes())}:${this.addLeadingZero(t.getSeconds())}`;
+    document.querySelector(".time").innerHTML = `${this.addLeadingZero(
+      t.getHours()
+    )}:${this.addLeadingZero(t.getMinutes())}:${this.addLeadingZero(
+      t.getSeconds()
+    )}`;
   },
 };
 

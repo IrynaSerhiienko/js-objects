@@ -1,8 +1,8 @@
-console.log("**********Norma-2***********");
+console.log("**********Norma-3***********");
 /* 1. Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
-    2.Зміни часу на передану кількість секунд.*/
+    3.Зміни часу на передану кількість хвилин.*/
 
-let numberSeconds = +prompt("Enter number of seconds, pl", "40");
+let numberMinutes = +prompt("Enter number of minutes, pl", "50");
 
 let d = new Date();
 let h = d.getHours();
@@ -10,19 +10,19 @@ let m = d.getMinutes();
 let s = d.getSeconds();
 
 const time = {
-  prompt: numberSeconds,
+  prompt: numberMinutes,
   hours: h,
   minutes: m,
   seconds: s,
 
-  addSeconds(currentS, enterS) {
-    d.setSeconds(this.seconds + this.prompt);
-    console.log(`Need add ${this.prompt}s`);
+  addMinutes(currentM, enterM) {
+    d.setMinutes(this.minutes + this.prompt);
+    console.log(`Need add ${this.prompt} min`);
     console.log(`Time after added is: ${d}`);
   },
 
   timeOutputHtmlPage() {
-    document.querySelector(".seconds").innerHTML = `${this.addLeadingZero(this.hours)}:${this.addLeadingZero(this.minutes)}:${this.addLeadingZero(this.seconds)}`;
+    document.querySelector(".minutes").innerHTML = `${this.addLeadingZero(this.hours)}:${this.addLeadingZero(this.minutes)}:${this.addLeadingZero(this.seconds)}`;
 
     console.log(
       `Now is__ ${this.addLeadingZero(this.hours)}:${this.addLeadingZero(
@@ -37,5 +37,5 @@ const time = {
 };
 
 time.timeOutputHtmlPage();
-time.addSeconds();
+time.addMinutes();
 time.addLeadingZero();
